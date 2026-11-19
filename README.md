@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Ticket Management System
 
 A RESTful API-based Ticket Management System built using **Node.js, Express.js, MongoDB and Mongoose**.
@@ -40,6 +40,15 @@ Two user roles are supported:
 | ADMIN | Access administrative routes and view tickets created by all users |
 
 ---
+
+## Current Limitations
+
+- Admins can view all submitted tickets, but changing ticket statuses (OPEN, IN_PROGRESS, CLOSED) through admin functionality has not been implemented yet.
+- Centralized error handling is not implemented yet.
+- Additional authentication improvements, such as access and refresh tokens, are planned for future development.
+
+---
+
 
 ## Technology Stack
 
