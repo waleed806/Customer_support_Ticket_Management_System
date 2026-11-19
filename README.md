@@ -54,48 +54,36 @@ Two user roles are supported:
 | cookie-parser | Cookie handling |
 | Postman | API testing |
 
----
-
 ## Project Structure
 
-text
+```text
 Ticket_Management_System/
-│
 ├── src/
-│   │
 │   ├── config/
 │   │   ├── config.js
 │   │   └── DatabaseConnection.js
-│   │
 │   ├── controllers/
 │   │   ├── admin.controller.js
 │   │   ├── auth.controller.js
 │   │   └── ticket.controller.js
-│   │
 │   ├── middleware/
 │   │   ├── admin.authorization.middleware.js
 │   │   └── auth.middleware.js
-│   │
 │   ├── models/
 │   │   ├── ticket.schema.js
 │   │   └── user.schema.js
-│   │
 │   ├── routes/
 │   │   ├── admin.route.js
 │   │   ├── auth.route.js
 │   │   └── tickets.route.js
-│   │
 │   └── services/
 │       └── auth.jwt.js
-│
 ├── .env
 ├── architecture.txt
 ├── index.js
 ├── package.json
 └── package-lock.json
-
-
----
+```
 
 ## Installation and Setup
 
