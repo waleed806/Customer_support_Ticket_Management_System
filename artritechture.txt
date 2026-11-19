@@ -1,0 +1,63 @@
+Project: Ticket Management System (Basic Version)
+1. User Authentication
+- User signup
+- User login
+- Password hashing using bcrypt
+- JWT authentication
+- Logout
+
+2. Ticket Management
+Logged-in user:
+- New ticket create kar sake.
+- Apne tickets dekh sake.
+- Ticket details dekh sake.
+- Ticket update kar sake.
+- Ticket delete kar sake.
+
+3. Admin Features
+Admin:
+- All users ke tickets dekh sake.
+- Kisi ticket ka status change kar sake.
+- Ticket ko resolve ya close kar sake.
+4. Ticket Status
+Har ticket ka ek status hoga:
+- OPEN
+- IN_PROGRESS
+- RESOLVED
+- CLOSED
+5. Ticket Categories
+User ticket create karte waqt category select karega:
+- Technical Issue
+- Payment Issue
+- Account Issue
+- General Query
+Database Models
+Initially sirf 2 models banayenge:
+
+User Model
+- name
+- email
+- password
+- role (USER / ADMIN)
+
+Ticket Model
+- title
+- description
+- priority
+- status
+- createdBy (User reference)
+- timestamps
+
+
+endpoints
+| Method | Endpoint | Purpose |
+|---|---|---|
+| POST | `/api/auth/signup` | Register |
+| POST | `/api/auth/login` | Login |
+| POST | `/api/tickets` | Create ticket |
+| GET | `/api/tickets` | Get user's tickets |
+| GET | `/api/tickets/:id` | Get single ticket |
+| PATCH | `/api/tickets/:id` | Update ticket |
+| DELETE | `/api/tickets/:id` | Delete ticket |
+| GET | `/api/admin/tickets` | Admin gets all tickets |
+| PATCH | `/api/admin/tickets/:id/status` | Admin updates status |
