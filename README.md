@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ticket Management System
 
 A RESTful API-based Ticket Management System built using **Node.js, Express.js, MongoDB and Mongoose**.
@@ -561,3 +562,6 @@ Potential improvements:
 ## Author
 
 Developed as a backend API project using Node.js, Express.js, MongoDB and JWT.
+=======
+# Customer_support_Ticket_Management_System
+>>>>>>> 0eb7781f30d15671218566469ead311f5d0526ba
